@@ -1,0 +1,13 @@
+<form [formGroup]="signUpForm">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName" formControlName="firstName" placeholder="First Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="lastName">Password</label>
+      <input type="text" class="form-control" formControlName="lastName" id="lastName" placeholder="Last Name">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="onSignUp()">Sign in</button>
+</form>

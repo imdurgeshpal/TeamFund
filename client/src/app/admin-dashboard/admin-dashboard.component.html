@@ -1,0 +1,20 @@
+<table class="table table-bordered mt-4">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let partyManager of partyManagers'>
+      <th scope="row">1</th>
+      <td>{{partyManager.firstName}}</td>
+      <td>{{partyManager.lastName}}</td>
+      <td><button class="btn btn-outline-primary">Edit</button></td>
+      <td><button class="btn btn-outline-danger">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
